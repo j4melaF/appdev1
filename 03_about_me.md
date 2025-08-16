@@ -2,7 +2,7 @@
 
 **Name:** Jamela Fernandez
 
-**Course/Year:** BS Information Technology 3rd Year - B
+**Course & Year:** BS Information Technology 3rd Year - B
 
 **Fun Fact:** Every time I hear music, my body gets triggered to dance.
 
