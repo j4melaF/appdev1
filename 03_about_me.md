@@ -1,4 +1,3 @@
-
 # About Me
 
 **Name:** Jamela Fernandez
