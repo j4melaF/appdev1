@@ -9,7 +9,7 @@ console.log(name, age, isStudent);
 console.log(typeof name, typeof age, typeof isStudent);
 
 // Doing some Arithmetic
-let a = 20;
+let a = 19;
 let b = 7;
 
 console.log("Add:", a + b);
@@ -17,6 +17,6 @@ console.log("Subtract:", a - b);
 console.log("Multiply:", a * b);
 console.log("Divide:", a / b);
 
-// Comparing /  Comparison
+// Comparing
 console.log("5" == 5);
 console.log("5" === 5);
