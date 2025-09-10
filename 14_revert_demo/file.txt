@@ -1,2 +1,3 @@
 Line
 Line 2
+Realization: Git revert created a new commit that undid the last change instead of deleting history. I noticed that the file.txt has no longer Line 3, remaining the lsat 2 line.
