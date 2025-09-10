@@ -1,0 +1,6 @@
+Feature A
+Bug fix
+Doc update
+
+Realization: Micro commits made the history cleaner and easier to understand even though you have to do it one by one.
+But, each commit had a clear purpose, unlike the macro commit which it bundles everything together in one commit.
