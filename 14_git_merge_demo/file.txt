@@ -1,0 +1,2 @@
+Realization: I realized that merge keeps the history from both branches and adds a merge commit.
+It shows how the branches were joined together without removing anything from the past commits.
