@@ -18,31 +18,27 @@ export function Practice() {
   );
 }
 
+function AdminPanel() {
+  return <h2>Welcome to the Admin Panel</h2>;
+}
+
+function LoginForm() {
+  return <h2>Please log in to access the system</h2>;
+}
+
 function App() {
-  const user = {
-    name: "Jamela",
-    imageUrl: "https://ph.pinterest.com/pin/3588874696346722/",
-    imageSize: 250
-  };
+  const isLoggedIn = false; 
 
   return (
     <div>
-      <h1>{user.name}</h1>
-      <img
-        className="avatar"
-        src={user.imageUrl}
-        alt={"Photo of " + user.name}
-        style={{
-          width: user.imageSize,
-          height: user.imageSize,
-          borderRadius: "50%",
-          boxShadow: "0 4px 8px rgba(0,0,0,0.3)"
-        }}
-      />
+      {isLoggedIn ? (
+        <AdminPanel />
+      ) : (
+        <LoginForm />
+      )}
     </div>
   );
 }
-
 
 export default App;
 // export default Practice;
