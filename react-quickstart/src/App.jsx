@@ -19,15 +19,32 @@ export function Practice() {
 }
 
 function App() {
-  return (
-    <>
-      <h1>Practicing the MarkUp.</h1>
-      <p>This is a paragraph inside <br />the MarkUp component.</p>
+  const user = {
+    name: "Jamela",
+    imageUrl: "https://ph.pinterest.com/pin/3588874696346722/",
+    imageSize: 250
+  };
 
-      <img className="jam"  src="https://www.shutterstock.com/image-vector/cute-panda-dabbing-pose-cartoon-character-2471990065" alt="Cute Panda" />
-    </>
+  return (
+    <div>
+      <h1>{user.name}</h1>
+      <img
+        className="avatar"
+        src={user.imageUrl}
+        alt={"Photo of " + user.name}
+        style={{
+          width: user.imageSize,
+          height: user.imageSize,
+          borderRadius: "50%",
+          boxShadow: "0 4px 8px rgba(0,0,0,0.3)"
+        }}
+      />
+    </div>
   );
 }
 
+
 export default App;
 // export default Practice;
+
+
