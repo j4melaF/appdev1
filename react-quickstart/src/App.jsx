@@ -2,6 +2,7 @@
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import { useState } from 'react';
 
 function Nesting() {
     return (
@@ -49,15 +50,31 @@ const program = [
   { title: 'BSSW', id: 3},
 ];
 
-export default function ProgramList() {
-  const programItems = program.map((program) =>
-    <li key={program.id}>
-      {program.title}</li>
-    );
+// export default function ProgramList() {
+//   const programItems = program.map((program) =>
+//     <li key={program.id}>
+//       {program.title}</li>
+//     );
+
+//   return (
+//     <ul>
+//       {programItems}
+//     </ul>
+//   );
+// }
+
+function ChangeTextButton() {
+  const [text, setText] = useState("Before Click");
+  
+  function handleClick() {
+    setText("After Click");
+  }
 
   return (
-    <ul>
-      {programItems}
-    </ul>
+    <button onClick={handleClick}>
+      {text}
+    </button>
   );
 }
+
+export default ChangeTextButton;
