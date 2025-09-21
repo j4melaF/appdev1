@@ -44,11 +44,11 @@ function App() {
 //export default App;
 // export default Practice;
 
-const program = [
-  { title: 'BSIS', id: 1},
-  { title: 'BAB', id: 2},
-  { title: 'BSSW', id: 3},
-];
+// const program = [
+//   { title: 'BSIS', id: 1},
+//   { title: 'BAB', id: 2},
+//   { title: 'BSSW', id: 3},
+// ];
 
 // export default function ProgramList() {
 //   const programItems = program.map((program) =>
