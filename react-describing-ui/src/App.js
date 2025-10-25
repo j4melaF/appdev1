@@ -33,3 +33,37 @@ function Card({ children }) {
     </div>
   );
 }
+
+function Item({ name, isPacked }) {
+  return (
+    <li className="item">
+      {name} {isPacked && '✅'}
+    </li>
+  );
+}
+
+export default function PackingList() {
+  return (
+    <section>
+      <h1>Rimuru's Battle Preparation List</h1>
+      <ul>
+        <Item 
+          isPacked={true} 
+          name="Slime Core Crystal" 
+        />
+        <Item 
+          isPacked={true} 
+          name="Demon Lord Cloak" 
+        />
+        <Item 
+          isPacked={false} 
+          name="Veldora’s Support Scroll" 
+        />
+        <Item 
+          isPacked={false} 
+          name="Potion Flask" 
+        />
+      </ul>
+    </section>
+  );
+}
