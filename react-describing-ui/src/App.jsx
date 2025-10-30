@@ -1,7 +1,7 @@
-import {ComponentA} from './ComponentA';
-import {ComponentC} from './ComponentC';
+import ComponentA from './ComponentA';
+import ComponentC from './ComponentC';
 
-export function RootComponent() {
+function RootComponent() {
   return (
     <div>
       <h1>Root Component</h1>
@@ -10,3 +10,5 @@ export function RootComponent() {
     </div>
   );
 }
+
+export default RootComponent;

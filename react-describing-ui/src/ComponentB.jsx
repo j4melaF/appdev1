@@ -1,6 +1,6 @@
 
 
-export function ComponentB(leaf) {
+function ComponentB(leaf) {
     return (
         <div>
             <h3>Component B</h3>
@@ -8,3 +8,5 @@ export function ComponentB(leaf) {
         </div>
     );
 }
+
+export default ComponentB;

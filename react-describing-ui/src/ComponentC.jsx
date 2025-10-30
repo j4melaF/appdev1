@@ -1,6 +1,6 @@
-import {ComponentD} from './ComponentD';
+import ComponentD from './ComponentD';
 
-export function ComponentC() {
+function ComponentC() {
     return (
         <div>
             <h2>Component C</h2>
@@ -8,3 +8,5 @@ export function ComponentC() {
         </div>
     );
 }
+
+export default ComponentC;
