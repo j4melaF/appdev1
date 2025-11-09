@@ -1,6 +1,6 @@
 import React from "react";
 
-import RootComponent from "./RootComponent.jsx";
+import RootComponent, {Header, Content, Footer} from "./RootComponent.jsx";
 const App = () => {
   return (
     <div>
