@@ -1,31 +1,43 @@
-import React from "react";
+import React from 'react';
+import './RootComponent.css';
 
-// this is the child component
 
 export const Header = () => {
-    return <header className="bg-blue-500 text-white p-4 text-xl">Header Section</header>
-
+  return (
+    <header className="header">
+      <h1>Welcome to My Simple Page</h1>
+    </header>
+  );
 };
 
 export const Content = () => {
-    return <main className="p-4">This is the content area.</main>
-}
+  return (
+    <main className="content">
+      <h2>About This Page</h2>
+      <p>
+        This page is a simple example of how to use multiple named exports in React. 
+        It also shows how to import styles from a separate CSS file.
+      </p>
+    </main>
+  );
+};
 
 export const Footer = () => {
-    return <footer className="bg-gray-800 text-white p-4 text-center">Footer Section</footer>
-}
+  return (
+    <footer className="footer">
+      <p>&copy; 2025 My Simple Website.</p>
+    </footer>
+  );
+};
 
-
-// now this is the root component
 
 const RootComponent = () => {
-    return (
-        <div>
-            <Header />
-            <Content />
-            <Footer />  
-        </div>
-    )
-}
-
+  return (
+    <div className="root-container">
+      <Header />
+      <Content />
+      <Footer />
+    </div>
+  );
+};
 export default RootComponent;
